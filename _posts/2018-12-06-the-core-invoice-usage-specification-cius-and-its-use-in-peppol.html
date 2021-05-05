@@ -1,0 +1,45 @@
+---
+layout: post
+title: The Core Invoice Usage Specification (CIUS) and its use in PEPPOL
+date: 2018-12-06 00:00:00
+---
+
+<div class="single-content">
+<p> </p>
+<p>The European Committee for Standardisation (CEN) technical committee TC434 published the European standard EN16931 (linked below) on 28 June 2017, which defines a semantic data model for a core invoice, compliant with the European Directive on electronic invoicing for public authorities (2014/55/EU).</p>
+<p> </p>
+<p>The data model of this European standard contains many optional elements, however specific countries, groups, or organisations may create individual specifications for the core invoice model (known as a ‘CIUS’) in their respective domains.</p>
+<p> </p>
+<p><strong>What is a CIUS?</strong></p>
+<p>“<em>A “Core Invoice Usage Specification” (CIUS) is a specification that provides a seller with detailed guidance, explanations and examples, as well as rules (business rules) related to the actual implementation and use of structured information elements present in the core invoice model in a specific trading situation. An instance document created following a given CIUS shall always be compliant with the European Standard (this document) Ref EN16931-1:2017 Chapter 7.”, which can be found at:</em></p>
+<p> </p>
+<p><a data-wpel-link="external" href="https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:60602&amp;cs=1B61B766636F9FB34B7DBD72CE9026C72" rel="external noopener noreferrer">https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:60602&amp;cs=1B61B766636F9FB34B7DBD72CE9026C72</a></p>
+<p> </p>
+<p>The standard specifies what type of restrictions a CIUS may contain. Examples are: making conditional elements mandatory or to mark conditional elements as not to be used. These restrictions are documented as Business Rules.</p>
+<p> </p>
+<p>Chapter 4.3 describes that a CIUS can be used to provision for automated processing and can minimize the need for prior bilateral agreements. Typically, additional restrictions are also used to enforce national legal requirements, simplify implementation and to require certain information which is necessary for a reliable transmission of the invoice (mandating specific identifiers or references).</p>
+<p> </p>
+<p>The business term Specification Identifier (BT-24) in the data model is used specifically to indicate if the instance document complies to a specific CIUS in addition to the EN.</p>
+<p> </p>
+<p><strong>How to claim compliance to the standard</strong></p>
+<p>Chapter 4.4 describes how to measure compliance towards the standard. Particularly two sections of the standard are important in this context:</p>
+<p> </p>
+<p>Chapter 4.4.4 specifies how an invoice instance can comply. The invoice must respect all rules (both syntactical and semantic). This means that all mandatory elements must be present, all business rules are respected and that it follows the rules of the technical format being used. The standard also says that an invoice also can respect additional rules which have been specified in a CIUS.</p>
+<p> </p>
+<p>Chapter 4.4.3 specifies how a sending or receiving party can comply. A receiver may claim compliance to the standard if he accepts invoices which comply to the core invoice model in general (in full) <u>or</u> with a CIUS.</p>
+<p> </p>
+<p><strong>The PEPPOL CIUS (PEPPOL BIS Billing 3.0)</strong></p>
+<p>OpenPEPPOL has developed and published a CIUS with the purpose to provide PEPPOL participants with a straight-forward and well documented approach on becoming compliant to the European standard. The purpose of the CIUS is to clarify several aspects which are undefined and to give usage guidance so that business partners may start using eInvoicing without prior bilateral agreements on how to use the standard.</p>
+<p> </p>
+<p><strong>Examples of rules:</strong></p>
+<ul>
+<li>Making the Buyer and Seller Electronic Address identifier mandatory. The reason is that these elements are necessary for transmission in the PEPPOL eDelivery Network and without the elements, the invoice would not be possible to send.</li>
+<li>Guidance and restrictions on the use of Invoice Type Codes. The CIUS has, in its default use, a limitation on the allowed Invoice Type Codes to be used. It also gives guidance on how a receiver may process invoices with the allowed type codes. The European standard lacks this necessary guidance. Also, other Invoice Type Codes may be used in the PEPPOL CIUS, but only after explicit registration that these are supported. Example of this is Self-billed invoices which are not required to be implemented by all PEPPOL users but may be after the capability is explicitly registered in the PEPPOL eDelivery Network.</li>
+<li>For some rules in the standard, schematron validations are missing in the deliverables from CEN TC434. PEPPOL has created these so that the rules can be automatically tested. Examples are calculation of allowance and charges.</li>
+<li>For country specific rules, the PEPPOL CIUS provides a mechanism to trigger certain rules based on the country of the supplier. These rules are provided by the PEPPOL Authorities and are used to enforce legal compliance. The country-specific rules make it possible to use a single CIUS in many countries and still ensure legal compliance.</li>
+</ul>
+<p> </p>
+<p>A full specification of restrictions is published as an annex to the PEPPOL CIUS.</p>
+<p> </p>
+<p>Support for the PEPPOL CIUS is required for all receivers in the PEPPOL eDelivery Network. However, it is also possible to use the EN in full in the PEPPOL eDelivery Network, in addition to the PEPPOL CIUS given that it is agreed bilaterally between the trading partners. It is expected that few will see a need for this, particularly as much of the quality assurance which the PEPPOL CIUS automatically guarantees, will have to be carried out manually for each exchanged invoice.</p>
+</div>
