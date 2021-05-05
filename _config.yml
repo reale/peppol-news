@@ -3,7 +3,7 @@ baseurl: '/'
 permalink: pretty
 title: 'PEPPOL'
 
-google_analytics_id: ""
+google_analytics_id: "G-156YW3Z431"
 
 homepage:
   show_call_box: true
