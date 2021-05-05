@@ -1,6 +1,7 @@
+url: 'https://peppol.global'
 baseurl: '/'
 permalink: pretty
-title: 'Jekyll Serif'
+title: 'PEPPOL'
 
 google_analytics_id: ""
 

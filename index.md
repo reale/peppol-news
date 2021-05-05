@@ -1,12 +1,17 @@
 ---
-title: Jekyll Serif Theme
+title: PEPPOL
 layout: home
-description: Jekyll Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+description: A pan-European framework for public procurement
 intro_image: "images/illustrations/pointing.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# Serif - A Jekyll Business Theme.
+# What is PEPPOL
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+PEPPOL stands for Pan-European Public Procurement OnLine. The network was
+established as a test project by the European Commission in in 2008.
+
+Organizations that are now connected to PEPPOL can exchange business documents,
+such as various electronic formats, through the highly secured and safe
+international network.
