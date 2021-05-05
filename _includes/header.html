@@ -1,11 +1,13 @@
 <div class='header'>
   <div class="container">
+      {% comment %}
     <div class="logo">
       <a href="{{ site.baseurl }}"><img height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /></a>
     </div>
     <div class="logo-mobile">
       <a href="{{ site.baseurl }}"><img alt="{{ site.title }}" src="{{ site.logo.mobile | relative_url }}" /></a>
     </div>
+      {% endcomment %}
     {% include main-menu.html %}
     {% include hamburger.html %}
   </div>
