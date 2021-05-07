@@ -5,16 +5,17 @@ REPO=peppol.global
 BRANCH=master
 
 ## update gh-pages
-[[ -n $GIT_ACCESS_TOKEN ]] || exit 1
+[[ -n $GIT_ACCESS_TOKEN ]] || { echo No GitHub access token found ; exit 1 ; }
 
 git config --global user.email "roberto@reale.info"
 git config --global user.name "Roberto Reale"
 git config --global credential.helper store
 echo "https://$GIT_ACCESS_TOKEN:x-oauth-basic@github.com" >> ~/.git-credentials
 
-rm -fr /tmp/$REPO && mkdir /tmp/$REPO
-cd /tmp/$REPO
+rm -fr /tmp/$REPO
+cd /tmp
 git clone https://github.com/$USER/$REPO.git
+cd $REPO
 git checkout $BRANCH || git checkout --orphan $BRANCH
 
 ## fetch news
