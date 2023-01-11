@@ -1,7 +1,7 @@
-url: 'https://peppol.global'
+url: 'https://peppol-news.reale.partners'
 baseurl: '/'
 permalink: pretty
-title: 'PEPPOL'
+title: 'PEPPOL News'
 
 google_analytics_id: "G-156YW3Z431"
 
@@ -19,7 +19,7 @@ footer:
 seo:
   meta_og_title: "PEPPOL"
   meta_og_type: "website"
-  meta_og_url: "https://peppol.global"
+  meta_og_url: "https://peppol.news"
   #  meta_og_image: "https://raw.githubusercontent.com/zerostaticthemes/jekyll-serif-theme/master/screenshots/tn.png"
   meta_og_description: "PEPPOL stands for Pan-European Public Procurement OnLine"
   meta_twitter_card: "summary"
